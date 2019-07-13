@@ -26,13 +26,17 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'iview/dist/styles/iview.css'
+   
+    'iview/dist/styles/iview.css',
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/css/base.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/iview'
+    '@/plugins/iview',
+    '@/plugins/ElementUI',
   ],
   /*
   ** Nuxt.js modules
@@ -47,6 +51,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
+    },
+    // 防止多次引入，多次打包
+    vendor:['element-ui']
   }
 }

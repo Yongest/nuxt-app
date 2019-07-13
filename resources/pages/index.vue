@@ -3,8 +3,11 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-app
+       hello nuxt-app !
+
       </h1>
+      <nuxt-link to="/car">go to car</nuxt-link>
+      <button @click="jumpto">go to fruits</button>
       <h2 class="subtitle">
         Welcome to the iView + Nuxt.js template
       </h2>
@@ -28,6 +31,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  methods:{
+    jumpto(){
+      this.$router.push('/fruits')
+    }
   }
 }
 </script>

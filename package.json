@@ -27,7 +27,7 @@
     "cross-env": "^5.2.0",
     "element-ui": "^2.10.1",
     "iview": "^3.1.5",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
